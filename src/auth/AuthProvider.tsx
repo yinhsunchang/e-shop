@@ -7,33 +7,45 @@ import type { ProfileProps } from "@/types/profile";
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<ProfileProps | null>(null);
-  const [loading, setLoading] = useState(true);
 
-  // Track Auth events to prevent stale initialization results.
+  // Auth initialization and profile loading are independent.
+  const [authLoading, setAuthLoading] = useState(true);
+  const [profileLoading, setProfileLoading] = useState(false);
+
   const authEventRef = useRef(0);
 
-  // Initialize Auth and listen for changes.
+  // Initialize Supabase Auth.
   useEffect(() => {
     let mounted = true;
 
     async function initializeAuth() {
       const eventVersion = authEventRef.current;
 
-      const { data, error } = await supabase.auth.getUser();
+      try {
+        const { data, error } = await supabase.auth.getUser();
 
-      if (!mounted) return;
+        if (!mounted) return;
 
-      // Ignore stale initialization results.
-      if (eventVersion !== authEventRef.current) return;
+        // Ignore stale initialization results.
+        if (eventVersion !== authEventRef.current) return;
 
-      if (error) {
-        console.error("Failed to get user:", error);
-        setUser(null);
-      } else {
-        setUser(data.user);
+        if (error) {
+          console.error("Failed to get user:", error);
+          setUser(null);
+        } else {
+          setUser(data.user);
+        }
+      } catch (error) {
+        console.error("Auth initialization failed:", error);
+
+        if (mounted && eventVersion === authEventRef.current) {
+          setUser(null);
+        }
+      } finally {
+        if (mounted && eventVersion === authEventRef.current) {
+          setAuthLoading(false);
+        }
       }
-
-      setLoading(false);
     }
 
     const {
@@ -44,6 +56,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       authEventRef.current += 1;
 
       setUser(session?.user ?? null);
+      setAuthLoading(false);
     });
 
     initializeAuth();
@@ -54,39 +67,46 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     };
   }, []);
 
-  // Load profile whenever the authenticated user changes.
+  // Load profile independently from Auth initialization.
   useEffect(() => {
     let mounted = true;
 
     async function fetchProfile() {
       if (!user) {
         setProfile(null);
-        setLoading(false);
+        setProfileLoading(false);
         return;
       }
 
-      setLoading(true);
+      setProfileLoading(true);
       setProfile(null);
 
-      const currentUserId = user.id;
+      try {
+        const { data, error } = await supabase
+          .from("profiles")
+          .select("*")
+          .eq("id", user.id)
+          .single();
 
-      const { data, error } = await supabase
-        .from("profiles")
-        .select("*")
-        .eq("id", currentUserId)
-        .single();
+        if (!mounted) return;
 
-      if (!mounted) return;
+        if (error) {
+          console.error("Failed to load profile:", error);
+          setProfile(null);
+        } else {
+          setProfile(data);
+        }
+      } catch (error) {
+        console.error("Profile loading failed:", error);
 
-      // Prevent stale profile data from being displayed.
-      if (error) {
-        console.error("Failed to load profile:", error);
-        setProfile(null);
-      } else {
-        setProfile(data);
+        if (mounted) {
+          setProfile(null);
+        }
+      } finally {
+        if (mounted) {
+          setProfileLoading(false);
+        }
       }
-
-      setLoading(false);
     }
 
     fetchProfile();
@@ -122,7 +142,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <AuthContext.Provider
-      value={{ user, profile, loading, signUp, signIn, signOut }}
+      value={{
+        user,
+        profile,
+
+        // loading now means Auth initialization only.
+        loading: authLoading,
+
+        profileLoading,
+
+        signUp,
+        signIn,
+        signOut,
+      }}
     >
       {children}
     </AuthContext.Provider>
