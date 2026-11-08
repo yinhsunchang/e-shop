@@ -1,0 +1,224 @@
+/* AddProduct.css */
+.add-product-page {
+  padding: 48px 24px;
+  margin-top: 32px;
+  color: #1f2937;
+}
+.add-product-page h1 {
+  margin: 0 0 32px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+}
+.add-product-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Form */
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Inputs */
+.form-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-input::placeholder {
+  color: #9ca3af;
+}
+.form-input:hover {
+  border-color: #9ca3af;
+}
+
+.form-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Select */
+select.form-input {
+  cursor: pointer;
+}
+select.form-input:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Textarea */
+.form-textarea {
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* File Upload */
+.file-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #374151;
+  font-size: 14px;
+  cursor: pointer;
+}
+.file-input:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+/* File button */
+.file-input::file-selector-button {
+  margin-right: 12px;
+  padding: 7px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.file-input::file-selector-button:hover {
+  background: #374151;
+}
+
+/* Price */
+.input-with-symbol {
+  position: relative;
+}
+.input-with-symbol > span {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+  pointer-events: none;
+}
+.input-with-symbol .form-input {
+  padding-left: 30px;
+}
+
+/* Buttons */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+.cancel-button,
+.submit-button {
+  padding: 11px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Cancel */
+.cancel-button {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+}
+.cancel-button:hover {
+  background: #f3f4f6;
+  border-color: #9ca3af;
+}
+
+/* Submit */
+.submit-button {
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+.submit-button:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+.submit-button:disabled {
+  background: #93c5fd;
+  border-color: #93c5fd;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Messages */
+.form-message {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.error-message {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #dc2626;
+}
+.success-message {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .add-product-page {
+    padding: 24px 16px;
+  }
+  .add-product-container {
+    padding: 24px 20px;
+
+    border-radius: 10px;
+  }
+  .add-product-container h1 {
+    font-size: 26px;
+    margin-bottom: 26px;
+  }
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+  .cancel-button,
+  .submit-button {
+    width: 100%;
+  }
+}

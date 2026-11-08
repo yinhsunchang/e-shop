@@ -1,0 +1,110 @@
+/* font */
+body,
+html {
+  font-family: "Urbanist", sans-serif;
+  height: 100%;
+  line-height: 1.8;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* responsive font-size */
+.jumbo {
+  font-size: clamp(2.25rem, 8vw, 4.25rem) !important;
+}
+.xxxlarge {
+  font-size: clamp(1.75rem, 6vw, 3rem) !important;
+}
+.xxlarge {
+  font-size: clamp(1.5rem, 5vw, 2.5rem) !important;
+}
+
+mark {
+  background: white;
+  color: #000;
+}
+.wide {
+  letter-spacing: 10px;
+}
+.hover-opacity {
+  cursor: pointer;
+}
+
+/* Layout Site */
+.layout-site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Layout Main */
+.layout-main {
+  flex: 1;
+}
+
+/* Layout Sidebar */
+/* Set the width of the admin sidebar to 120px */
+.sidebar {
+  width: 120px;
+  background-color: #222;
+}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+  margin-left: 120px;
+}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0;
+  }
+}
+
+/* Parallax */
+/* Create a Parallax Effect */
+.bgimg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* First image (Full height) */
+.bgimg {
+  height: 100dvh;
+  height: 100vh;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .bgimg {
+    background-attachment: scroll;
+    background-size: cover;
+    height: 50dvh;
+    height: 50vh;
+  }
+}
+
+/* Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 24px;
+  height: 24px;
+  color: white !important;
+}
+.swiper-pagination-bullet {
+  background: white !important;
+}
+.swiper {
+  position: relative;
+  z-index: 0;
+}

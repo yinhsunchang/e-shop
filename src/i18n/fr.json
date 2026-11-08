@@ -1,0 +1,497 @@
+{
+  "pageTitle": "STYLE-D",
+  "pageDescription": "Style-D, une boutique en ligne au style unique, imaginée autour de Docteur et de son univers.",
+
+  "404": {
+    "title": "Oups !",
+    "text": "Erreur 404 - Page introuvable"
+  },
+
+  "chat": {
+    "open": "Ouvrir la conversation",
+    "close": "Fermer la conversation",
+    "title": "Messages",
+    "placeholder": "Écrivez votre message...",
+    "send": "ENVOYER",
+    "meow": "Miaou !",
+    "text1": "Comment puis-je t'aider ?"
+  },
+
+  "nav": {
+    "mainNavigation": "Navigation principale",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "languages": "LANGUES",
+    "en": "Anglais",
+    "fr": "Français",
+    "search": "Recherche",
+    "cart": "Panier",
+    "home": "ACCUEIL",
+    "collectionA": "Collection de Noël",
+    "collectionB": "Collection Zorro",
+    "collectionC": "Collection C",
+    "collectionD": "Collection D",
+    "collectionE": "Collection E",
+    "about": "À PROPOS",
+    "contact": "CONTACT",
+    "signin": "SE CONNECTER"
+  },
+
+  "promobar": {
+    "text1": "Objets sélectionnés par Docteur.",
+    "text2": "Livraison gratuite dès 50 € d'achat !"
+  },
+
+  "slide": {
+    "title1": "LES CHOIX DU DOCTEUR",
+    "text1": "De petites choses, choisies avec soin.",
+    "button1": "DÉCOUVREZ LA COLLECTION →",
+    "title2": "INSPIRÉ PAR DOCTEUR",
+    "text2": "De petites choses, choisies avec soin..",
+    "button2": "DÉCOUVREZ LA COLLECTIONN →"
+  },
+
+  "category": {
+    "title": "Explorez nos collections",
+    "titleA": "Collection de Noël",
+    "descriptionA": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "headerA1": "Je suis",
+    "headerA2": "le Père Noël...",
+    "titleB": "Collection Zorro",
+    "descriptionB": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "headerB1": "Je suis",
+    "headerB2": "Zorro...",
+    "titleC": "Collection C",
+    "descriptionC": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "headerC1": "Parfois",
+    "headerC2": "je lis...",
+    "titleD": "Collection D",
+    "descriptionD": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "headerD1": "Parfois",
+    "headerD2": "je mange...",
+    "titleE": "Collection E",
+    "descriptionE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "headerE1": "Parfois",
+    "headerE2": "je joue..."
+  },
+
+  "product": {
+    "sort": {
+      "newest": "Les plus récents",
+      "priceLow": "Prix : du plus bas au plus élevé",
+      "priceHigh": "Prix : du plus élevé au plus bas"
+    },
+    "inStock": "En stock",
+    "quantity": "Quantité",
+    "increaseQuantity": "Augmenter la quantité",
+    "decreaseQuantity": "Diminuer la quantité",
+    "add": {
+      "soldOut": "ÉPUISÉ",
+      "add": "AJOUTER AU PANIER"
+    },
+    "noProduct": "Aucun Produit",
+    "noImage": "Aucune Image",
+    "error": "Échec du chargement des produits.",
+    "accordion": {
+      "title1": "PAIEMENT",
+      "text1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "title2": "LIVRAISON",
+      "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "title3": "RETOUR & REMBOURSEMENT",
+      "text3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  },
+
+  "search": {
+    "search": "Rechercher des produits...",
+    "results": "Résultats"
+  },
+
+  "cart": {
+    "open": "Ouvrir le panier",
+    "close": "Fermer le panier",
+    "title": "Votre panier",
+    "empty": "Votre panier est vide.",
+    "noImage": "Aucune image",
+    "remove": "Supprimer",
+    "subtotal": "Sous-total",
+    "shipping": "*Frais de port et taxes calculés lors du paiement.",
+    "checkout": "VALIDER",
+    "increaseQuantity": "Augmenter la quantité",
+    "decreaseQuantity": "Diminuer la quantité"
+  },
+
+  "checkout": {
+    "title": "Paiement",
+    "empty": "Votre panier est vide.",
+    "continue": "Continuer vos achats",
+    "edit": "Modifier",
+    "email": "Email",
+    "name": "Nom",
+    "address": "Adresse",
+    "notSet": "Non défini",
+    "noImage": "Aucune image",
+    "items": "Articles",
+    "quantity": "Quantité : ",
+    "increaseQuantity": "Augmenter la quantité",
+    "decreaseQuantity": "Diminuer la quantité",
+    "total": "Total",
+    "remove": "Supprimer",
+    "place": "Passer la commande",
+    "creating": "Création de la commande...",
+    "orderError": "La création de la commande a échoué."
+  },
+
+  "service": {
+    "title": "Services",
+    "payment": "Paiement",
+    "shipment": "Livraison",
+    "return": "Retour",
+    "FAQ": "FAQ",
+    "help": "Aide"
+  },
+
+  "footer": {
+    "about": {
+      "title": "À propos",
+      "about": "À propos",
+      "subscribe": "S'abonner"
+    },
+    "service": {
+      "title": "Services",
+      "payment": "Paiement",
+      "shipment": "Livraison",
+      "return": "Retour",
+      "FAQ": "FAQ",
+      "help": "Aide"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "accept": {
+      "title": "Nous acceptons"
+    }
+  },
+
+  "about": {
+    "header1": "Tu",
+    "header2": "me regardes ?",
+    "title": "À PROPOS",
+    "title1": "Le D",
+    "text1": "D est l'initiale de DOCTEUR, qui est un chat, un mannequin et un fauteur de troubles occasionnel...",
+    "button1": "RENCONTREZ DOCTEUR →",
+    "title2": "La boutique",
+    "text2": "STYLE-D est une petite collection d’objets sélectionnés par DOCTEUR.",
+    "button2": "DÉCOUVRIR LA BOUTIQUE →"
+  },
+
+  "subscribe": {
+    "close": "Fermer",
+    "title": "Abonnez-vous à notre newsletter",
+    "name": "Nom",
+    "send": " ENVOYER",
+    "sending": "Envoi...",
+    "success": "Inscription réussie !",
+    "error": "Échec de l'inscription. Veuillez réessayer."
+  },
+
+  "contact": {
+    "header1": "Entrons",
+    "header2": "en contact...",
+    "title": "Me Contacter",
+    "address": "Paris, FRANCE",
+    "phone": "Téléphone : +33 6 25 31 97 92",
+    "email": "Email: theodocteur2022@gmail.com",
+    "sendMessage": "Envoyez-moi un message:",
+    "placeholder": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message"
+    },
+    "sendButton": " ENVOYER",
+    "sending": "Envoi...",
+    "success": "Message envoyé avec succès !",
+    "fail": "Échec de l'envoi du message. Veuillez réessayer."
+  },
+
+  "signup": {
+    "title": "Créer un nouveau compte",
+    "signup": "S'inscrire",
+    "loading": "Création du compte...",
+    "already": "Vous avez déjà un compte ?",
+    "signin": "Se connecter",
+    "required": "Veuillez saisir votre adresse e-mail et votre mot de passe.",
+    "success": "Inscription réussie. Veuillez consulter votre e-mail.",
+    "email": "Email",
+    "emailPlaceholder": "Adresse e-mail",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Saisissez votre mot de passe",
+    "confirmEmail": "Inscription réussie ! Veuillez consulter votre messagerie et cliquer sur le lien de confirmation pour activer votre compte.",
+    "signupFailed": "L'inscription a échoué. Veuillez réessayer.",
+    "genericError": "Une erreur est survenue. Veuillez réessayer."
+  },
+
+  "signin": {
+    "title": "Connectez-vous à votre compte",
+    "signin": "Se connecter",
+    "loading": "Connexion en cours...",
+    "notyet": "Vous n'avez pas encore de compte ?",
+    "signup": "S'inscrire",
+    "required": "Veuillez saisir votre adresse e-mail et votre mot de passe.",
+    "email": "Email",
+    "emailPlaceholder": "vous@exemple.com",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Saisissez votre mot de passe",
+    "invalidCredentials": "Adresse e-mail ou mot de passe incorrect.",
+    "genericError": "Une erreur inattendue s'est produite. Veuillez réessayer."
+  },
+
+  "routeProtected": {
+    "loading": "Vérification de l'authentification..."
+  },
+
+  "account": {
+    "title": "Mon compte",
+    "profile": "Profil",
+    "profileError": "Impossible de charger le profil.",
+    "email": "Email: ",
+    "name": "Nom: ",
+    "notSet": "Non défini",
+    "role": "Rôle : ",
+    "address": "Adresse",
+    "orders": "Commandes",
+    "ordersLink": "Mes Commandes →",
+    "signout": "Se déconnecter",
+    "signingout": "Déconnexion en cours...",
+    "signoutError": "Impossible de se déconnecter. Veuillez réessayer."
+  },
+
+  "orders": {
+    "back": "← Retour à Mon Compte",
+    "title": "Mes Commandes",
+    "noOrder": "Vous n'avez pas encore de commandes.",
+    "goShopping": "Commencer vos achats",
+    "order": "Commande",
+    "total": "Total",
+    "date": "Date",
+    "orderLink": "Voir la commande →",
+    "fetchError": "Échec du chargement des commandes",
+    "status": {
+      "pending": "En attente",
+      "paid": "Payé",
+      "cancelled": "Annulé",
+      "shipped": "Expédié",
+      "completed": "Terminé"
+    }
+  },
+
+  "orderDetail": {
+    "back": "← Retour à mes commandes",
+    "title": "Commande",
+    "status": "Statut",
+    "created": "Créée le",
+    "items": "Articles",
+    "noItems": "Aucun article dans cette commande.",
+    "price": "Prix : ",
+    "quantity": "Quantité : ",
+    "subtotal": "Sous-total : ",
+    "total": "Total : ",
+    "pay": "Payer",
+    "creating": "Création de la page de paiement...",
+    "paid": "Paiement effectué.",
+    "cannotpay": "Paiement impossible. Veuillez réessayer.",
+    "pending1": "Paiement en attente",
+    "pending2": "Votre commande est en attente de paiement.",
+    "paid1": "Paiement confirmé",
+    "paid2": "Votre commande a été payée avec succès.",
+    "cancelled1": "Paiement annulé",
+    "cancelled2": "Votre paiement a été annulé. Votre commande n'a pas été payée.",
+    "shipped1": "Commande expédiée",
+    "shipped2": "Votre commande a été expédiée.",
+    "completed1": "Commande terminée",
+    "completed2": "Votre commande est terminée",
+    "notFound": "Commande introuvable",
+    "notFoundP": "Cette commande n'existe pas.",
+    "noId": "L'identifiant de commande est manquant.",
+    "fetchError": "Commande introuvable ou échec du chargement des détails de la commande."
+  },
+
+  "navAdmin": {
+    "navigation": "Navigation Admin",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "shop": "BOUTIQUE",
+    "dashboard": "DASHBOARD",
+    "products": "PRODUITS",
+    "orders": "COMMANDES",
+    "subscribers": "ABONNÉES",
+    "messages": "MESSAGES",
+    "languages": "LANGUES"
+  },
+
+  "dashboard": {
+    "title": "Tableau de bord",
+    "profile": "Profil",
+    "email": "Email : ",
+    "name": "Nom : ",
+    "notSet": "Non défini",
+    "role": "Rôle : ",
+    "products": "Produits",
+    "lienProducts": "Produits →",
+    "commandes": "Commandes",
+    "lienCommandes": "Commandes →",
+    "abonnés": "Abonnés",
+    "lienAbonnés": "Abonnés →",
+    "messages": "Messages",
+    "lienMessages": "Messages →",
+    "signout": "Se déconnecter",
+    "signingout": "Déconnexion en cours...",
+    "signoutError": "Impossible de se déconnecter. Veuillez réessayer."
+  },
+
+  "products": {
+    "title": "Produits",
+    "add": "Ajouter des produits",
+    "stock": "Stock: ",
+    "edit": "Modifier",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "deleteSuccess": "Produit supprimé avec succès.",
+    "errorImage": "Le produit a été supprimé, mais son image n'a pas pu être retirée du stockage. Veuillez procéder à sa suppression manuellement.",
+    "errorUnexpected": "Une erreur inattendue s'est produite.",
+    "empty": "Aucun produit pour le moment.",
+    "noImage": "Aucune image",
+    "error": {
+      "fetch": "Échec du chargement des produits.",
+      "delete": "La fiche produit n'a pas été supprimée.",
+      "path": "Impossible d'identifier le chemin de l'image.",
+      "deleteImage": "La suppression de l'image n'a pas été confirmée."
+    }
+  },
+
+  "productAdd": {
+    "title": "Ajouter un produit",
+    "image": "Image du produit",
+    "category": "Catégorie",
+    "select": "Sélectionner une catégorie",
+    "name": "Nom du produit",
+    "description": "Description",
+    "placeholder": "Description du produit",
+    "price": "Prix",
+    "stock": "Stock",
+    "cancel": "Annuler",
+    "creating": "Création en cours...",
+    "add": "Ajouter un produit",
+    "validation": {
+      "name": "Le nom du produit est obligatoire.",
+      "categoryId": "Veuillez sélectionner une catégorie.",
+      "price": "Veuillez saisir un prix valide.",
+      "stock": "Veuillez saisir un stock valide.",
+      "image": "Veuillez sélectionner une image.",
+      "imageType": "Veuillez importer une image au format JPG, PNG ou WEBP.",
+      "imageSize": "La taille de l'image doit être inférieure à 5 Mo.",
+      "fileExt": "Fichier image non valide."
+    },
+    "error": {
+      "fetchCategories": "Échec du chargement des catégories.",
+      "error": "Une erreur est survenue."
+    }
+  },
+
+  "productEdit": {
+    "title": "Modifier le produit",
+    "info": "Informations sur le produit",
+    "infoP": "Informations de base sur votre produit.",
+    "name": "Nom",
+    "namePlaceholder": "Nom du produit",
+    "description": "Description",
+    "descriptionPlaceholder": "Décrivez votre produit...",
+    "price": "Prix",
+    "inventory": "Inventaire",
+    "inventoryP": "Gérer votre stock disponible.",
+    "stock": "Stock",
+    "stockP": "Nombre d'articles actuellement disponibles.",
+    "image": "Image du produit",
+    "imageP": "Télécharger une image pour votre produit.",
+    "noImage": "Aucune image",
+    "imageReplace": "Image du produit",
+    "category": "Catégorie",
+    "categoryP": "Organiser votre produit.",
+    "select": "Sélectionner une catégorie",
+    "save": "Enregistrer les modifications",
+    "saving": "Enregistrement en cours...",
+    "cancel": "Annuler",
+    "notFound": "Produit introuvable",
+    "back": "Retour",
+    "validation": {
+      "name": "Le nom du produit est obligatoire.",
+      "categoryId": "Veuillez sélectionner une catégorie.",
+      "price": "Veuillez saisir un prix valide.",
+      "stock": "Veuillez saisir un stock valide.",
+      "imageType": "Veuillez importer une image au format JPG, PNG ou WEBP.",
+      "imageSize": "La taille de l'image doit être inférieure à 5 Mo.",
+      "fileExt": "Fichier image non valide."
+    },
+    "error": {
+      "fetchCategories": "Échec du chargement des catégories.",
+      "fetchProduct": "Échec du chargement du produit.",
+      "error": "Une erreur est survenue."
+    }
+  },
+
+  "ordersAdmin": {
+    "title": "Commandes",
+    "fetchError": "Échec du chargement des commandes",
+    "noOrder": "Aucune commande.",
+    "order": "Commande",
+    "total": "Total",
+    "date": "Date",
+    "orderLink": "Voir la commande →"
+  },
+
+  "orderDetailAdmin": {
+    "back": "← Retour aux commandes",
+    "customer": "Client",
+    "title": "Commandes",
+    "date": "Date",
+    "noOrder": "Aucune commande.",
+    "order": "Commande",
+    "total": "Total",
+    "status": "Statut",
+    "save": "Sauvegarder le statut",
+    "notFound": "Commande introuvable",
+    "notFoundP": "Cette commande n'existe pas.",
+    "noId": "L'identifiant de commande est manquant.",
+    "fetchError": "Commande introuvable ou échec du chargement des détails de la commande."
+  },
+
+  "contacts": {
+    "title": "Contacts",
+    "name": "Nom: ",
+    "delete": "Supprimer",
+    "deleting": "Suppression en cours",
+    "deleteFailed": "Échec de la suppression",
+    "empty": "Aucun message"
+  },
+
+  "subscribers": {
+    "title": "Abonnés",
+    "name": "Nom: ",
+    "delete": "Supprimer",
+    "deleting": "Suppression en cours",
+    "deleteFailed": "Échec de la suppression",
+    "empty": "Aucun abonné"
+  },
+
+  "pagination": {
+    "pagination": "Pagination",
+    "previous": "Page précédente",
+    "next": "Page suivante"
+  },
+
+  "loading": "Chargement...",
+  "confirm": {
+    "delete": "Êtes-vous sûr de supprimer ?"
+  }
+}

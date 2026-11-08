@@ -1,0 +1,497 @@
+{
+  "pageTitle": "STYLE-D",
+  "pageDescription": "Style-D, a unique online store inspired by Doctor and his world.",
+
+  "404": {
+    "title": "Oops!",
+    "text": "Error 404 - Page Not Found"
+  },
+
+  "chat": {
+    "open": "Open Chat",
+    "close": "Close Chat",
+    "title": "Messages",
+    "placeholder": "Write your message...",
+    "send": "SEND",
+    "meow": "Meow!",
+    "text1": "How can I help you?"
+  },
+
+  "nav": {
+    "mainNavigation": "Main Navigation",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu",
+    "languages": "LANGUAGES",
+    "en": "English",
+    "fr": "French",
+    "search": "Search",
+    "cart": "Cart",
+    "home": "HOME",
+    "collectionA": "Christmas Collection",
+    "collectionB": "Zorro Collection",
+    "collectionC": "Collection C",
+    "collectionD": "Collection D",
+    "collectionE": "Collection E",
+    "about": "ABOUT",
+    "contact": "CONTACT",
+    "signin": "SIGN IN"
+  },
+
+  "promobar": {
+    "text1": "Objects selected by Doctor.",
+    "text2": "Free Shipping Over €50 !"
+  },
+
+  "slide": {
+    "title1": "DOCTOR'S CHOICES",
+    "text1": "Small things, carefully chosen.",
+    "button1": "DISCOVER THE COLLECTION →",
+    "title2": "INSPIRED BY DOCTOR",
+    "text2": "Small things, carefully chosen.",
+    "button2": "DISCOVER THE COLLECTION →"
+  },
+
+  "category": {
+    "title": "Explore our collections",
+    "titleA": "Christmas Collection",
+    "descriptionA": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "headerA1": "I'm",
+    "headerA2": "Santa Claus...",
+    "titleB": "Zorro Collection",
+    "descriptionB": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "headerB1": "I'm",
+    "headerB2": "Zorro...",
+    "titleC": "Collection C",
+    "descriptionC": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "headerC1": "Sometimes",
+    "headerC2": "I read...",
+    "titleD": "Collection D",
+    "descriptionD": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "headerD1": "Sometimes",
+    "headerD2": "I eat...",
+    "titleE": "Collection E",
+    "descriptionE": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "headerE1": "Sometimes",
+    "headerE2": "I play..."
+  },
+
+  "product": {
+    "sort": {
+      "newest": "Newest",
+      "priceLow": "Price: Low to High",
+      "priceHigh": "Price: High to Low"
+    },
+    "inStock": "In stock",
+    "quantity": "Quantity",
+    "increaseQuantity": "Increase quantity",
+    "decreaseQuantity": "Decrease quantity",
+    "add": {
+      "soldOut": "SOLD OUT",
+      "add": "ADD TO CART"
+    },
+    "noProduct": "No Product",
+    "noImage": "No Image",
+    "error": "Failed to load products.",
+    "accordion": {
+      "title1": "PAYMENT",
+      "text1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "title2": "SHIPPING",
+      "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "title3": "RETURN & REFUND",
+      "text3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  },
+
+  "search": {
+    "search": "Search products...",
+    "results": "Results"
+  },
+
+  "cart": {
+    "open": "Open Cart",
+    "close": "Close Cart",
+    "title": "Your Cart",
+    "empty": "Your cart is empty.",
+    "noImage": "No Image",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "shipping": "*Shipping and taxes calculated at checkout.",
+    "checkout": "CHECKOUT",
+    "increaseQuantity": "Increase quantity",
+    "decreaseQuantity": "Decrease quantity"
+  },
+
+  "checkout": {
+    "title": "Checkout",
+    "empty": "Your cart is empty.",
+    "continue": "Continue Shopping",
+    "edit": "Edit",
+    "email": "Email",
+    "name": "Name",
+    "address": "Address",
+    "notSet": "Not set",
+    "items": "Items",
+    "noImage": "No Image",
+    "quantity": "Quantity: ",
+    "increaseQuantity": "Increase quantity",
+    "decreaseQuantity": "Decrease quantity",
+    "total": "Total",
+    "remove": "Remove",
+    "place": "Place Order",
+    "creating": "Creating order...",
+    "orderError": "Create order failed."
+  },
+
+  "service": {
+    "title": "Services",
+    "payment": "Payment",
+    "shipment": "Shipment",
+    "return": "Return",
+    "FAQ": "FAQ",
+    "help": "Help"
+  },
+
+  "footer": {
+    "about": {
+      "title": "About",
+      "about": "About Us",
+      "subscribe": "Subscribe"
+    },
+    "service": {
+      "title": "Services",
+      "payment": "Payment",
+      "shipment": "Shipment",
+      "return": "Return",
+      "FAQ": "FAQ",
+      "help": "Help"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "accept": {
+      "title": "We accept"
+    }
+  },
+
+  "about": {
+    "header1": "Are you",
+    "header2": "looking at me?",
+    "title": "About",
+    "title1": "The D",
+    "text1": "D is the initial of DOCTOR, who is a cat, a model, and an occasional troublemaker...",
+    "button1": "MEET DOCTOR →",
+    "title2": "The Shop",
+    "text2": "STYLE-D is a small collection of things selected by DOCTOR.",
+    "button2": "DISCOVER THE SHOP →"
+  },
+
+  "subscribe": {
+    "close": "Close",
+    "title": "Subscribe to our newsletter",
+    "name": "Name",
+    "send": " SEND",
+    "sending": "Sending...",
+    "success": "Subscription submitted successfully!",
+    "error": "Failed to submit subscription. Please try again."
+  },
+
+  "contact": {
+    "header1": "Let's",
+    "header2": "get in touch...",
+    "title": "Contact Me",
+    "address": "Paris, FRANCE",
+    "phone": "Phone: +33 6 25 31 97 92",
+    "email": "Email: theodocteur2022@gmail.com",
+    "sendMessage": "Send me a message:",
+    "placeholder": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "sendButton": " SEND",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "fail": "Failed to send message. Please try again."
+  },
+
+  "signup": {
+    "title": "Create a new account",
+    "signup": "Sign up",
+    "loading": "Creating account...",
+    "already": "Already have an account?",
+    "signin": "Sign in",
+    "required": "Please enter your email and password.",
+    "success": "Registration successful. Please check your email.",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "confirmEmail": "Registration successful! Please check your email and click the confirmation link to activate your account.",
+    "signupFailed": "Registration failed. Please try again.",
+    "genericError": "Something went wrong. Please try again."
+  },
+
+  "signin": {
+    "title": "Sign in to your account",
+    "signin": "Sign in",
+    "loading": "Signing in...",
+    "notyet": "Don’t have an account yet?",
+    "signup": "Sign up",
+    "required": "Please enter your email and password.",
+    "email": "Email",
+    "emailPlaceholder": "Email address",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "invalidCredentials": "Invalid email or password.",
+    "genericError": "An unexpected error occurred. Please try again."
+  },
+
+  "routeProtected": {
+    "loading": "Checking authentication..."
+  },
+
+  "account": {
+    "title": "My Account",
+    "profile": "Profile",
+    "profileError": "Unable to load profile.",
+    "email": "Email: ",
+    "name": "Name: ",
+    "notSet": "Not set",
+    "role": "Role: ",
+    "address": "Address",
+    "orders": "Orders",
+    "ordersLink": "My Orders →",
+    "signout": "Sign out",
+    "signingout": "Signing out...",
+    "signoutError": "Unable to sign out. Please try again."
+  },
+
+  "orders": {
+    "back": "← Back to My Account",
+    "title": "My Orders",
+    "noOrder": "You don't have any orders yet.",
+    "goShopping": "Start Shopping",
+    "order": "Order",
+    "total": "Total",
+    "date": "Date",
+    "orderLink": "View Order →",
+    "fetchError": "Failed to load orders",
+    "status": {
+      "pending": "Pending",
+      "paid": "Paid",
+      "cancelled": "Cancelled",
+      "shipped": "Shipped",
+      "completed": "Completed"
+    }
+  },
+
+  "orderDetail": {
+    "back": "← Back to My Orders",
+    "title": "Order",
+    "status": "Status",
+    "created": "Created",
+    "items": "Items",
+    "noItems": "No items in this order.",
+    "price": "Price: ",
+    "quantity": "Quantity: ",
+    "subtotal": "Subtotal: ",
+    "total": "Total: ",
+    "pay": "Pay",
+    "creating": "Creating payment page...",
+    "paid": "Payment completed.",
+    "cannotpay": "Unable to be paid. Please try again.",
+    "pending1": "Payment pending",
+    "pending2": "Your order is waiting to be paid.",
+    "paid1": "Payment confirmed",
+    "paid2": "Your order has been paid successfully.",
+    "cancelled1": "Payment cancelled",
+    "cancelled2": "Your payment was cancelled. Your order has not been paid.",
+    "shipped1": "Order shipped",
+    "shipped2": "Your order is shipped.",
+    "completed1": "Order completed",
+    "completed2": "Your order is completed",
+    "notFound": "Order not found",
+    "notFoundP": "This order does not exist.",
+    "noId": "Order ID is missing.",
+    "fetchError": "Order not found or failed to load order details."
+  },
+
+  "navAdmin": {
+    "navigation": "Navigation Admin",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu",
+    "shop": "SHOP",
+    "dashboard": "DASHBOARD",
+    "products": "PRODUCTS",
+    "orders": "ORDERS",
+    "subscribers": "SUBSCRIBERS",
+    "messages": "MESSAGES",
+    "languages": "LANGUAGES"
+  },
+
+  "dashboard": {
+    "title": "Dashboard",
+    "profile": "Profile",
+    "email": "Email: ",
+    "name": "Name: ",
+    "notSet": "Not set",
+    "role": "Role: ",
+    "products": "Products",
+    "productsLink": "Products →",
+    "orders": "Orders",
+    "ordersLink": "Orders →",
+    "subscribers": "Subscribers",
+    "subscribersLink": "Subscribers →",
+    "messages": "Messages",
+    "messagesLink": "Messages →",
+    "signout": "Sign out",
+    "signingout": "Signing out...",
+    "signoutError": "Unable to sign out. Please try again."
+  },
+
+  "products": {
+    "title": "Products",
+    "add": "Add Products",
+    "stock": "Stock: ",
+    "edit": "Edit",
+    "save": "Save",
+    "delete": "Delete",
+    "deleteSuccess": "Product deleted successfully.",
+    "errorImage": "Product was deleted, but its image could not be removed from Storage. Please clean it up manually.",
+    "errorUnexpected": "An unexpected error occurred.",
+    "empty": "No products yet.",
+    "noImage": "No Image",
+    "error": {
+      "fetch": "Failed to load products.",
+      "delete": "Product record was not deleted.",
+      "path": "Cannot identify image path.",
+      "deleteImage": "Image deletion was not confirmed."
+    }
+  },
+
+  "productAdd": {
+    "title": "Add Product",
+    "image": "Product Image",
+    "category": "Category",
+    "select": "Select category",
+    "name": "Product Name",
+    "description": "Description",
+    "placeholder": "Product Description",
+    "price": "Price",
+    "stock": "Stock",
+    "cancel": "Cancel",
+    "creating": "Creating...",
+    "add": "Add Product",
+    "validation": {
+      "name": "Product name is required.",
+      "categoryId": "Please select a category.",
+      "price": "Please enter a valid price.",
+      "stock": "Please enter a valid stock.",
+      "image": "Please select an image.",
+      "imageType": "Please upload a JPG, PNG or WEBP image.",
+      "imageSize": "Image size must be less than 5MB.",
+      "fileExt": "Invalid image file."
+    },
+    "error": {
+      "fetchCategories": "Failed to load categories.",
+      "error": "Something went wrong."
+    }
+  },
+
+  "productEdit": {
+    "title": "Edit Product",
+    "info": "Product information",
+    "infoP": "Basic information about your product.",
+    "name": "Name",
+    "namePlaceholder": "Product name",
+    "description": "Description",
+    "descriptionPlaceholder": "Describe your product...",
+    "price": "Price",
+    "inventory": "Inventory",
+    "inventoryP": "Manage your available stock.",
+    "stock": "Stock",
+    "stockP": "Number of items currently available.",
+    "image": "Product Image",
+    "imageP": "Upload an image for your product.",
+    "noImage": "No Image",
+    "imageReplace": "Product Image",
+    "category": "Category",
+    "categoryP": "Organize your product.",
+    "select": "Select category",
+    "save": "Save changes",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "notFound": "Product not found",
+    "back": "Back",
+    "validation": {
+      "name": "Product name is required.",
+      "categoryId": "Please select a category.",
+      "price": "Please enter a valid price.",
+      "stock": "Please enter a valid stock.",
+      "imageType": "Please upload a JPG, PNG or WEBP image.",
+      "imageSize": "Image size must be less than 5MB.",
+      "fileExt": "Invalid image file."
+    },
+    "error": {
+      "fetchCategories": "Failed to load categories.",
+      "fetchProduct": "Failed to load product.",
+      "error": "Something went wrong."
+    }
+  },
+
+  "ordersAdmin": {
+    "title": "Orders",
+    "fetchError": "Failed to load orders",
+    "noOrder": "No orders yet.",
+    "order": "Order",
+    "total": "Total",
+    "date": "Date",
+    "orderLink": "View Order →"
+  },
+
+  "orderDetailAdmin": {
+    "back": "← Back to Orders",
+    "customer": "Customer",
+    "title": "Orders",
+    "date": "Date",
+    "noOrder": "No orders yet.",
+    "order": "Order",
+    "total": "Total",
+    "status": "Status",
+    "save": "Save Status",
+    "notFound": "Order not found",
+    "notFoundP": "This order does not exist.",
+    "noId": "Order ID is missing.",
+    "fetchError": "Order not found or failed to load order details."
+  },
+
+  "contacts": {
+    "title": "Contacts",
+    "name": "Name: ",
+    "delete": "Delete",
+    "deleting": "Deleting",
+    "deleteFailed": "Delete failed",
+    "empty": "No messages"
+  },
+
+  "subscribers": {
+    "title": "Subscribers",
+    "name": "Name: ",
+    "delete": "Delete",
+    "deleting": "Deleting",
+    "deleteFailed": "Delete failed",
+    "empty": "No subscribers"
+  },
+
+  "pagination": {
+    "pagination": "Pagination",
+    "previous": "Previous page",
+    "next": "Next page"
+  },
+
+  "loading": "Loading...",
+  "confirm": {
+    "delete": "Are you sure to delete?"
+  }
+}

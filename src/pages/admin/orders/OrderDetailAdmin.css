@@ -1,0 +1,234 @@
+/* AdminOrder.css */
+.admin-order-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  color: #1f2937;
+}
+.admin-order-page h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+}
+
+/* Header */
+.admin-order-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+/* Status badge */
+.admin-status {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.status-pending {
+  color: #ffb305 !important;
+  border: 2px solid #ffb305;
+}
+.status-paid {
+  color: #008a00 !important;
+  border: 2px solid #008a00;
+}
+.status-cancelled {
+  color: #dd0000 !important;
+  border: 2px solid #dd0000;
+}
+.status-shipped {
+  color: #0a6fc2 !important;
+  border: 2px solid #0a6fc2;
+}
+.status-completed {
+  border: 2px solid #ccc;
+}
+
+/* Summary */
+.admin-order-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+.admin-summary-item {
+  padding: 20px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+.admin-summary-item span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+.admin-summary-item strong {
+  font-size: 18px;
+  color: #111827;
+}
+
+/* Section titles */
+.order-items-section h2,
+.status-section h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  color: #111827;
+}
+
+/* Items */
+.admin-order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.admin-order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.admin-order-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+.item-details h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111827;
+}
+.item-details p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Subtotal */
+.item-subtotal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  min-width: 120px;
+}
+.item-subtotal span {
+  font-size: 12px;
+  color: #9ca3af;
+}
+.item-subtotal strong {
+  font-size: 16px;
+  color: #111827;
+}
+
+/* Status section */
+.status-section {
+  margin-top: 36px;
+  padding: 20px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+.status-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 120px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+/* Select */
+.status-select {
+  min-width: 120px;
+  padding: 11px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.status-select:hover {
+  border-color: #9ca3af;
+}
+.status-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Save button */
+.save-status-button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.save-status-button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+.save-status-button:active {
+  transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .admin-order-page {
+    padding: 32px 16px;
+  }
+  .admin-order-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .admin-order-header h1 {
+    font-size: 27px;
+  }
+  .order-summary {
+    grid-template-columns: 1fr;
+  }
+  .admin-order-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .item-subtotal {
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 12px;
+    border-top: 1px solid #f3f4f6;
+  }
+  .status-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .status-select {
+    width: 100%;
+  }
+  .save-status-button {
+    width: 100%;
+  }
+}

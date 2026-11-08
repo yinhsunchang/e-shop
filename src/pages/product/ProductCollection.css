@@ -1,0 +1,31 @@
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pagination .button {
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  background: transparent;
+}
+.pagination .button.active {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+.pagination .button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

@@ -1,0 +1,124 @@
+/* Dashboard Page */
+.dashboard-page {
+  padding: 36px 24px;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+.dashboard-page h1 {
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+}
+.dashboard-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Cards Layout */
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.dashboard-card {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.dashboard-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+.dashboard-card h2 {
+  margin: 0 0 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+.dashboard-card p {
+  margin: 12px 0;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.dashboard-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Orders Link */
+.dashboard-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #f4f7fb;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.dashboard-link:hover {
+  color: #ffffff;
+}
+
+/* Sign Out Button */
+.dashboard-signout {
+  width: 100%;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.dashboard-signout:hover:not(:disabled) {
+  background: #b91c1c;
+  transform: translateY(-1px);
+}
+.dashboard-signout:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.dashboard-signout:focus-visible,
+.dashboard-link:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .dashboard-content {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+  .dashboard-content > :first-child {
+    grid-column: 1 / -1;
+  }
+  .dashboard-content > :last-child {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 480px) {
+  .dashboard-page {
+    padding: 28px 16px;
+  }
+  .dashboard-container > h1 {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+  .dashboard-card {
+    padding: 22px;
+    border-radius: 12px;
+  }
+}
