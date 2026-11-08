@@ -84,6 +84,7 @@ describe("RouteGuest", () => {
       user: null,
       profile: null,
       loading: true,
+      profileLoading: false,
     } as ReturnType<typeof useAuth>);
 
     renderRouteGuest();
@@ -100,6 +101,7 @@ describe("RouteGuest", () => {
       user: { id: "1" } as User,
       profile: { role: "admin" } as ProfileProps,
       loading: false,
+      profileLoading: false,
     } as ReturnType<typeof useAuth>);
 
     renderRouteGuest();
@@ -117,6 +119,7 @@ describe("RouteGuest", () => {
       user: { id: "2" } as User,
       profile: { role: "customer" } as ProfileProps,
       loading: false,
+      profileLoading: false,
     } as ReturnType<typeof useAuth>);
 
     renderRouteGuest();
@@ -134,6 +137,7 @@ describe("RouteGuest", () => {
       user: { id: "3" } as User,
       profile: null,
       loading: false,
+      profileLoading: false,
     } as ReturnType<typeof useAuth>);
 
     renderRouteGuest();
@@ -149,6 +153,7 @@ describe("RouteGuest", () => {
       user: null,
       profile: null,
       loading: false,
+      profileLoading: false,
     } as ReturnType<typeof useAuth>);
 
     renderRouteGuest();
@@ -168,6 +173,7 @@ describe("RouteGuest", () => {
       user: { id: "1" } as User,
       profile: { role: "admin" } as ProfileProps,
       loading: false,
+      profileLoading: false,
     } as ReturnType<typeof useAuth>);
 
     render(
@@ -208,6 +214,7 @@ describe("RouteGuest", () => {
       user: { id: "2" } as User,
       profile: { role: "customer" } as ProfileProps,
       loading: false,
+      profileLoading: false,
     } as ReturnType<typeof useAuth>);
 
     render(

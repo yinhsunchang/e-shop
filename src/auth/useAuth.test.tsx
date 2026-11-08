@@ -8,6 +8,7 @@ describe("useAuth", () => {
       user: null,
       profile: null,
       loading: false,
+      profileLoading: false,
       signUp: vi.fn(),
       signIn: vi.fn(),
       signOut: vi.fn(),
