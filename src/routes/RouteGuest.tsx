@@ -4,7 +4,7 @@ import { useAuth } from "@/auth/useAuth";
 
 export default function RouteGuest() {
   const { t } = useTranslation();
-  const { user, loading } = useAuth();
+  const { user, profile, loading } = useAuth();
 
   if (loading) {
     return (
@@ -15,7 +15,12 @@ export default function RouteGuest() {
   }
 
   if (user) {
-    return <Navigate to="/admin/dashboard" replace />;
+    return (
+      <Navigate
+        to={profile?.role === "admin" ? "/admin/dashboard" : "/user/account"}
+        replace
+      />
+    );
   }
 
   return <Outlet />;
