@@ -3,6 +3,9 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter, Routes, Route, useNavigate } from "react-router-dom";
 
+import type { User } from "@supabase/supabase-js";
+import type { ProfileProps } from "@/types/profile";
+
 import RouteGuest from "./RouteGuest";
 import { useAuth } from "@/auth/useAuth";
 
@@ -18,6 +21,16 @@ vi.mock("react-i18next", () => ({
 
 const mockedUseAuth = vi.mocked(useAuth);
 
+// Shared mock Auth
+const mockAuth = {
+  user: null,
+  profile: null,
+  loading: false,
+  signUp: vi.fn(),
+  signIn: vi.fn(),
+  signOut: vi.fn(),
+};
+
 // Test pages
 function LoginPage() {
   return <div>Login Page</div>;
@@ -25,6 +38,10 @@ function LoginPage() {
 
 function DashboardPage() {
   return <div>Dashboard Page</div>;
+}
+
+function AccountPage() {
+  return <div>Account Page</div>;
 }
 
 function PreviousPage() {
@@ -48,6 +65,8 @@ function renderRouteGuest(initialEntries = ["/login"]) {
 
         <Route path="/admin/dashboard" element={<DashboardPage />} />
 
+        <Route path="/user/account" element={<AccountPage />} />
+
         <Route path="/previous" element={<PreviousPage />} />
       </Routes>
     </MemoryRouter>
@@ -61,7 +80,9 @@ describe("RouteGuest", () => {
 
   it("should display loading when auth is initializing", () => {
     mockedUseAuth.mockReturnValue({
+      ...mockAuth,
       user: null,
+      profile: null,
       loading: true,
     } as ReturnType<typeof useAuth>);
 
@@ -73,9 +94,11 @@ describe("RouteGuest", () => {
     expect(screen.queryByText("Login Page")).not.toBeInTheDocument();
   });
 
-  it("should redirect authenticated users to dashboard", () => {
+  it("should redirect authenticated admin users to dashboard", () => {
     mockedUseAuth.mockReturnValue({
-      user: { id: "1" },
+      ...mockAuth,
+      user: { id: "1" } as User,
+      profile: { role: "admin" } as ProfileProps,
       loading: false,
     } as ReturnType<typeof useAuth>);
 
@@ -84,11 +107,47 @@ describe("RouteGuest", () => {
     expect(screen.getByText("Dashboard Page")).toBeInTheDocument();
 
     expect(screen.queryByText("Login Page")).not.toBeInTheDocument();
+
+    expect(screen.queryByText("Account Page")).not.toBeInTheDocument();
+  });
+
+  it("should redirect authenticated regular users to account", () => {
+    mockedUseAuth.mockReturnValue({
+      ...mockAuth,
+      user: { id: "2" } as User,
+      profile: { role: "customer" } as ProfileProps,
+      loading: false,
+    } as ReturnType<typeof useAuth>);
+
+    renderRouteGuest();
+
+    expect(screen.getByText("Account Page")).toBeInTheDocument();
+
+    expect(screen.queryByText("Login Page")).not.toBeInTheDocument();
+
+    expect(screen.queryByText("Dashboard Page")).not.toBeInTheDocument();
+  });
+
+  it("should redirect authenticated users without profile to account", () => {
+    mockedUseAuth.mockReturnValue({
+      ...mockAuth,
+      user: { id: "3" } as User,
+      profile: null,
+      loading: false,
+    } as ReturnType<typeof useAuth>);
+
+    renderRouteGuest();
+
+    expect(screen.getByText("Account Page")).toBeInTheDocument();
+
+    expect(screen.queryByText("Dashboard Page")).not.toBeInTheDocument();
   });
 
   it("should render Outlet when user is not authenticated", () => {
     mockedUseAuth.mockReturnValue({
+      ...mockAuth,
       user: null,
+      profile: null,
       loading: false,
     } as ReturnType<typeof useAuth>);
 
@@ -97,13 +156,17 @@ describe("RouteGuest", () => {
     expect(screen.getByText("Login Page")).toBeInTheDocument();
 
     expect(screen.queryByText("Dashboard Page")).not.toBeInTheDocument();
+
+    expect(screen.queryByText("Account Page")).not.toBeInTheDocument();
   });
 
-  it("should replace history when redirecting authenticated users", async () => {
+  it("should replace history when redirecting authenticated admin users", async () => {
     const user = userEvent.setup();
 
     mockedUseAuth.mockReturnValue({
-      user: { id: "1" },
+      ...mockAuth,
+      user: { id: "1" } as User,
+      profile: { role: "admin" } as ProfileProps,
       loading: false,
     } as ReturnType<typeof useAuth>);
 
@@ -124,12 +187,54 @@ describe("RouteGuest", () => {
             }
           />
 
+          <Route path="/user/account" element={<AccountPage />} />
           <Route path="/previous" element={<PreviousPage />} />
         </Routes>
       </MemoryRouter>
     );
 
     expect(screen.getByText("Dashboard Page")).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: "Go Back" }));
+
+    expect(screen.getByText("Previous Page")).toBeInTheDocument();
+  });
+
+  it("should replace history when redirecting authenticated regular users", async () => {
+    const user = userEvent.setup();
+
+    mockedUseAuth.mockReturnValue({
+      ...mockAuth,
+      user: { id: "2" } as User,
+      profile: { role: "customer" } as ProfileProps,
+      loading: false,
+    } as ReturnType<typeof useAuth>);
+
+    render(
+      <MemoryRouter initialEntries={["/previous", "/login"]} initialIndex={1}>
+        <Routes>
+          <Route element={<RouteGuest />}>
+            <Route path="/login" element={<LoginPage />} />
+          </Route>
+
+          <Route path="/admin/dashboard" element={<DashboardPage />} />
+
+          <Route
+            path="/user/account"
+            element={
+              <>
+                <AccountPage />
+                <BackButton />
+              </>
+            }
+          />
+
+          <Route path="/previous" element={<PreviousPage />} />
+        </Routes>
+      </MemoryRouter>
+    );
+
+    expect(screen.getByText("Account Page")).toBeInTheDocument();
 
     await user.click(screen.getByRole("button", { name: "Go Back" }));
 
